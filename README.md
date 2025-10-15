@@ -238,8 +238,8 @@ gh workflow run Workflow-1-Deploy-CycleCloud.yaml \
   -f location="eastus" \
   -f vnet_name="my-hpc-vnet" \
   -f subnet_name="cyclecloud-subnet" \
-  -f cyclecloud_username="admin_becasue_of_course_i_did" \
-  -f cyclecloud_password="Regeret_isputting passwords_here" \
+  -f cyclecloud_username="admin" \
+  -f cyclecloud_password="MySecurePass123!" \
   -f cyclecloud_ssh_public_key="ssh-rsa AAAAB3..."
 ```
 
@@ -254,7 +254,7 @@ gh workflow run Workflow-1-Deploy-CycleCloud.yaml \
 gh workflow run Workflow-2-Create-PBSpro-Cluster.yaml \
   -f cyclecloud_url="https://10.0.1.4" \
   -f cyclecloud_username="admin" \
-  -f cyclecloud_password="MySecurePass" \
+  -f cyclecloud_password="MySecurePass123!" \
   -f cluster_name="pbspro-cluster" \
   -f resource_group_name="cyclecloud-rg" \
   -f location="eastus" \
