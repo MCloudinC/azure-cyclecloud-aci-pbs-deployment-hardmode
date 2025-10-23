@@ -17,9 +17,9 @@ on:
         required: true
         type: choice
         options:
-          - RG-BH_HPC_Cloud_Azure-NP-SUB-000005-EastUS-dev
-          - RG-BH_HPC_Cloud_Azure-QA-SUB-000002-EastUS-qa
-        default: RG-BH_HPC_Cloud_Azure-NP-SUB-000005-EastUS-dev
+          - Rchangeme-EastUS-dev
+          - Rchangeme-EastUS-qa
+        default: changeme-EastUS-dev
       image_tag:
         description: "CycleCloud image tag from mcr.microsoft.com/hpc/azure-cyclecloud"
         required: false
