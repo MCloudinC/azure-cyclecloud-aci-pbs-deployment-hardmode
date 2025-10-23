@@ -1,46 +1,12 @@
-# 🚀 CycleCloud PBS Pro Automation for Azure Container Instances - v2.1
+# CycleCloud PBS Pro Automation for Azure Container Instances
 
-**MAJOR UPDATE**: This version features **multi-stage GitHub Actions workflows** with enhanced reliability, better error handling, and improved user experience.
+Fully automated GitHub Actions workflows to deploy Azure CycleCloud with PBS Pro scheduler on Azure Container Instances using **private networking**.
 
-## 🆕 What's New in v2.1
+## 🚀 Quick Start
 
-### **🏗️ Multi-Stage Architecture**
-- ✅ **4-stage deployment process** instead of monolithic jobs
-- ✅ **Independent stage debugging** - identify exactly where issues occur
-- ✅ **Conditional execution** - skip unnecessary operations intelligently  
-- ✅ **Better restart capability** - resume from failure points
-- ✅ **Enhanced error messages** with specific fix instructions
+**Two simple workflows** deploy a complete HPC environment in ~30 minutes:
 
-### **⚡ Improved Reliability**
-- ✅ **Retry logic** for Azure operations (up to 3 attempts)
-- ✅ **Smart deployment decisions** based on existing container state
-- ✅ **Comprehensive validation** before expensive operations
-- ✅ **Network-first validation** - VNet configuration checked early
-
-### **📚 Complete Documentation**
-- ✅ **Step-by-step setup guide** (`SETUP_GUIDE.md`)
-- ✅ **Detailed troubleshooting** for common issues
-- ✅ **Rich deployment reports** with access instructions
-- ✅ **Management commands** for ongoing operations
-
----
-
-## 🚀 Quick Start Guide
-
-### **Prerequisites Checklist**
-Before running workflows, ensure you have:
-
-- [ ] **Azure Infrastructure**: Resource group, VNet with subnets
-- [ ] **Service Principal**: With Container Instance and Network permissions  
-- [ ] **GitHub Secrets**: AZURE_CREDENTIALS, CYCLECLOUD_ADMIN_USERNAME/PASSWORD
-- [ ] **GitHub Variables**: RESOURCE_GROUP, AZURE_REGION, VIRTUAL_NETWORK_* settings
-- [ ] **Network Access**: VPN Gateway, Azure Bastion, or Jump Box for private networking
-
-**📖 For detailed setup instructions, see [`SETUP_GUIDE.md`](SETUP_GUIDE.md)**
-
-### **Two Enhanced Workflows** deploy a complete HPC environment in ~30 minutes:
-
-1. **Workflow 1**: Deploy CycleCloud container (4-stage process)
+1. **Workflow 1**: Deploy CycleCloud container (private networking)
 2. **Workflow 2**: Create PBS cluster + configure autoscale (fully automated)
 
 ## Overview
